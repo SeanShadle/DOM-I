@@ -60,7 +60,6 @@ nav5.textContent = siteContent.nav["nav-item-5"]
 nav6.textContent = siteContent.nav["nav-item-6"]
 
 
-
 //cta selectors
 const cta = document.querySelector('.cta')
 const ctaH1 = cta.querySelector('h1')
@@ -137,3 +136,22 @@ const footerP = footerContent.querySelector('p')
 
 //footer updates
 footerP.textContent = siteContent['footer']['copyright']
+
+
+
+//adding nav items and changing color
+
+const nav0 = document.createElement('a')
+nav0.textContent = "Get Started"
+nav0.href = '#'
+nav.prepend(nav0)
+
+const nav7 = nav.appendChild(document.createElement('a'))
+nav7.href = '#'
+nav7.textContent = 'Projects'
+
+const allNav = nav.querySelectorAll('a')
+
+allNav.forEach(navItem => {
+  navItem.style.color = 'green'
+})
