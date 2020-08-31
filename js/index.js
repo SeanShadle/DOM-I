@@ -155,3 +155,32 @@ const allNav = nav.querySelectorAll('a')
 allNav.forEach(navItem => {
   navItem.style.color = 'green'
 })
+
+//Stretch updates
+
+ctaBtn.style.fontWeight = 'bold'
+//Changing size of font on mainContent's h4s
+const mainH4s = mainContent.querySelectorAll('h4')
+
+mainH4s.forEach(item => {
+  item.style.fontSize = '2rem'
+})
+
+
+//Changing line height of p tags in mainContent
+const mainPs = mainContent.querySelectorAll('p')
+
+mainPs.forEach(item => {
+  item.style.lineHeight = '1.5'
+})
+
+
+//Adding borders to mainContent
+mainDiv2.style.borderLeft = 'solid 2px black'
+mainDiv2.style.paddingLeft = '2rem'
+
+bottomDiv2.style.borderLeft = 'solid 2px black'
+bottomDiv2.style.paddingLeft = '2rem'
+
+bottomDiv3.style.borderLeft = 'solid 2px black'
+bottomDiv3.style.paddingLeft = '2rem'
